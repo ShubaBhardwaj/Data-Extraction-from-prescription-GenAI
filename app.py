@@ -66,13 +66,14 @@ SOS -> "Only when needed" (e.g., for pain or fever).
 4)Always show the Medicine Name and Dosage back to the user with a "Does this look correct?" prompt before adding it to the timetable.
 Output:
 Output should be in json format 
-Morning (08:00 AM): [Medicine Name] - [Dosage] - [Before/After Food]
 
-Afternoon (02:00 PM): [Medicine Name] - [Dosage] - [Before/After Food]
+{
+Morning (08:00 AM): [Medicine Name]” : “[Dosage] - [Before/After Food]”
 
-Evening (08:00 PM): [Medicine Name] - [Dosage] - [Before/After Food]
+"Afternoon (02:00 PM): [Medicine Name]” : “[Dosage] - [Before/After Food]”
 
-Return the result as JSON with a single key 'Conclusion' containing the full analysis.
+"Evening (08:00 PM): [Medicine Name]” : “[Dosage] - [Before/After Food]”
+}
 """
 
 # --- API Endpoint ---
